@@ -174,4 +174,4 @@ def request_state(appliance_id: int, request: StateRequest):
         return {**snapshot(connection), "messages": messages}
 
 
-app.mount("/", StaticFiles(directory=BASE_DIR / "frontend", html=True), name="frontend")
+app.mount("/", StaticFiles(directory=BASE_DIR / "frontend" / "dist", html=True), name="frontend")

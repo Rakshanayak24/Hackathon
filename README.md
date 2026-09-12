@@ -1,12 +1,14 @@
 # Inverter Load Manager
 
-A small FastAPI, SQLite and dependency-free browser application for safely coordinating an 800W home inverter.
+A small FastAPI, SQLite and React application for safely coordinating an 800W home inverter.
 
 ## Run it
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+npm.cmd install --prefix frontend
+npm.cmd run build --prefix frontend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
